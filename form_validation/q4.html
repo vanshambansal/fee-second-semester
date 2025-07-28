@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+        }
+        form {
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+            font-size: 0.9em;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="number"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+        .checkbox-group {
+            display: flex; 
+            align-items: center;
+            margin-top: 20px;
+        }
+        .checkbox-group label {
+            margin-bottom: 0;
+            font-weight: normal;
+        }
+        button {
+            background-color: #6200ea; 
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1em;
+            margin-top: 25px;
+        }
+        button:hover {
+            background-color: #3f00a4;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Register Account</h2>
+
+        <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+
+        <div class="form-group">
+            <label for="regEmail">Email:</label>
+            <input type="email" id="regEmail" name="regEmail" required>
+        </div>
+
+        <div class="form-group">
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" name="regPassword" required minlength="8">
+        </div>
+
+        <div class="form-group">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required>
+        </div>
+
+        <div class="form-group">
+            <label for="regAge">Age:</label>
+            <input type="number" id="regAge" name="regAge" min="18" max="99" required>
+        </div>
+
+        <div class="checkbox-group">
+            <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
+            <label for="acceptTerms">I accept the terms and conditions</label>
+        </div>
+        
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
