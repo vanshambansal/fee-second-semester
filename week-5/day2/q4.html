@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* @media (max-width: 768px) {
+  #bg-music {
+    width: 100px;
+    height: 50px;
+
+  }
+} */
+
+    </style>
+</head>
+<body>
+    <section class="media-section">
+  <video class="project-video" controls muted poster="project-thumbnail.jpg" width="100%">
+    <source src="video.mp4" type="video/mp4">
+    <track src="subtitles_en.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support video playback.
+  </video>
+
+  <audio id="bg-music" autoplay loop >
+    <source src="music.mp3" type="audio/mp3" >
+  </audio>
+  <button onclick="document.getElementById('bg-music').play()"> Play Background Music</button>
+
+  <iframe src="https://www.google.com/maps/embed?pb=YOUR_MAP_LINK"
+          width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+
+  <object data="FunctionOverloading.pdf" type="application/pdf" width="100%" height="600">
+    <p>Your browser does not support viewing PDFs. <a href="FunctionOverloading.pdf">Download PDF</a>.</p>
+  </object>
+</section>
+
+</body>
+</html>
