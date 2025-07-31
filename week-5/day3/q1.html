@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Travel Blog</title>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f7f9;
+            padding: 20px;
+        }
+        header, footer {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+        table, th, td {
+            border: 1px solid #aaa;
+        }
+        th, td {
+            padding: 8px;
+            text-align: center;
+        }
+        form {
+            margin-top: 20px;
+        }
+        video, audio {
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Travel Blog</h1>
+        <nav>
+            <a href="#intro">Intro</a>
+            <a href="#destinations">Top Places</a>
+            <a href="#form">Plan a Trip</a>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <p>Hello! I love to travel and explore different cultures and food. Here's a glimpse into some of my favorite travel memories.</p>
+        <img src="image.png" alt="Travel Image" width="300">
+    </section>
+
+    <section id="destinations">
+        <h2>Top 3 Travel Destinations</h2>
+        <table>
+            <tr>
+                <th>Country</th>
+                <th>Best Time to Visit</th>
+                <th>Language</th>
+            </tr>
+            <tr>
+                <td>Japan</td>
+                <td>March - May</td>
+                <td>Japanese</td>
+            </tr>
+            <tr>
+                <td>Italy</td>
+                <td>April - June</td>
+                <td>Italian</td>
+            </tr>
+            <tr>
+                <td>Canada</td>
+                <td>June - August</td>
+                <td>English, French</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h3>Quote I Love</h3>
+        <blockquote>"Travel is the only thing you buy that makes you richer."</blockquote>
+    </section>
+
+    <section>
+        <h3>Watch My Trip Video</h3>
+        <video width="320" controls>
+            <source src="video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h3>Background Music</h3>
+        <audio autoplay loop muted>
+            <source src="music.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+    </section>
+
+    <section id="form">
+        <h3>Plan Your Trip</h3>
+        <form>
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Destination Interest:</label><br>
+            <select name="destination">
+                <option>Japan</option>
+                <option>Italy</option>
+                <option>Canada</option>
+            </select><br><br>
+
+            <label>Type of Traveler:</label><br>
+            <input type="radio" name="type" value="solo"> Solo<br>
+            <input type="radio" name="type" value="group"> Group<br><br>
+
+            <label>Email ID:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Travel Blog</p>
+    </footer>
+
+</body>
+</html>
